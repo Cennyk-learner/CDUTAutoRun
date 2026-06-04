@@ -1,0 +1,20 @@
+# 这是一份【已脱敏】的运行日志示例，用于说明漏洞可被成功利用。
+# 真实的学号、姓名、班级、token、文件URL 等敏感字段均已用 *** 占位。
+# 仅供向校方说明问题，请勿据此进行任何真实作弊。
+
+[YYYY-MM-DD HH:MM:SS] au ok: {"userId": ***, "userCode": "***", "userName": "***", "classCode": "***"}
+[YYYY-MM-DD HH:MM:SS] before sportNum=0 milage=0.0 expend=0
+[YYYY-MM-DD HH:MM:SS] rules type=3 milage=4000 timeRule=960,1920 speedRule=240,480 limitTime=[{"startTime":"06:00","endTime":"22:00"}]
+[YYYY-MM-DD HH:MM:SS] plan: {"targetDistance": 4523.2, "expectedServerDistance": 4378.5, "durationSec": 1189, "targetServerPaceSecPerKm": 271.5, "points": 224, "innerPerimeter": 2971.8, "shrink": 0.526}
+[YYYY-MM-DD HH:MM:SS] started sportId=*** startTime=YYYY-MM-DD HH:MM:SS
+[YYYY-MM-DD HH:MM:SS] gps idx=0/223   elapsed=4s    clientDist=0.0m    serverTotal=0    serverPace=0s/km
+[YYYY-MM-DD HH:MM:SS] gps idx=120/223 elapsed=640s  clientDist=2430.1m serverTotal=2351  serverPace=272s/km
+[YYYY-MM-DD HH:MM:SS] gps idx=223/223 elapsed=1185s clientDist=4523.2m serverTotal=4378  serverPace=271s/km
+[YYYY-MM-DD HH:MM:SS] target reached; update state=0
+[YYYY-MM-DD HH:MM:SS] update ok: ***
+[YYYY-MM-DD HH:MM:SS] end ok: ***
+[YYYY-MM-DD HH:MM:SS] after sportNum=1 milage=4378.0 expend=1185
+[YYYY-MM-DD HH:MM:SS] latest record: {"sportState": 9, "sportMilage": 4378, "expendTime": 1185, "averageSpeed": "***"}
+[YYYY-MM-DD HH:MM:SS] DONE
+# 结论：服务端最终记录了一次"有效"的校园跑（里程达标、配速在规则区间内），
+# 但整个过程没有任何真实的运动或位移发生。
